@@ -1,8 +1,18 @@
-Commit project
+1.Concept project
+/================
++Navbar
+    -image menu
+    -Logo project
+    -list menu (Home, Product, About as, login)
+
++slide conten 
+    -image slide
+
+
+2.Commit project
+/===============
 
 Navbar menu done by brostoch
-
-
 
 
 
