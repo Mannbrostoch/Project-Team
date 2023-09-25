@@ -2,12 +2,13 @@
 /================
 
 +Navbar
-    -image menu
+   -image menu
     -Logo project
     -list menu (Home, Product, About as, login)
 
 +slide conten 
     -image slide
+    -video slide
 
 
 2.Commit project
@@ -24,3 +25,9 @@ Navbar menu done by brostoch
 4. git status
 5. git commit -m "name"
 6. git push origin main (main or master)
+
+-other add project
+
+1.Change branch user 
+2.Push Project form personal branch
+
