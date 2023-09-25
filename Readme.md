@@ -8,6 +8,7 @@
 
 +slide conten 
     -image slide
+    -video slide
 
 
 2.Commit project
