@@ -12,4 +12,4 @@ Navbar menu done by brostoch
 3. git add .
 4. git status
 5. git commit -m "name"
-6. git push branch main (main or master)
+6. git push origin main (main or master)
