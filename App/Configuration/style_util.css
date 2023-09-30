@@ -1,0 +1,11 @@
+:root {
+    --color--orange:rgb(243, 207, 79);
+    --color--orange--inset : rgb(249, 232, 172);
+    --color--blueviolet : blueviolet;
+    --color--aliceblue : aliceblue;
+    --color--green : rgb(97, 156, 63);
+    --color--gray--low : rgb(200, 198, 198);
+    --font--Chakra--Petch :'Chakra Petch', sans-serif;
+    --shadow--inset : inset  4px 4px 3px var(--color--orange--inset), 4px 2px 5px rgb(235, 221, 169);
+    
+}
