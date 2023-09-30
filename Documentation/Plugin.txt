@@ -1,0 +1,9 @@
+
+* Free Icon
+    web link => https://cdnjs.com/libraries/font-awesome
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <i class="fa-regular fa-circle-left"></i>
+
+-----------------------------
+
