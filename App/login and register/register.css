@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(120deg, #4699d0 ,#c97ee9);
+}
+.container{
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    background-color: white;
+    box-shadow: 0 5px 10px black;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.forms{
+    display: flex;
+    align-items: center;
+    height: 600px;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.container .form{
+    background-color: white;
+    width: 50%;
+    padding: 30px;
+    transition: margin-left 0.18s ease;
+}
+.title{
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+.input-file{
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+.input-file input{
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+.input-file input:is(:focus, :valid){
+    border-bottom-color: rgb(110, 110, 243);
+}
+.input-file input:is(:focus, :valid)~i{
+    color: rgb(110, 110, 243);
+}
+.input-file i{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(72, 78, 78);
+    font-size: 23px;
+}
+.icon{
+    left: 0;
+}
+.show{
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.box-content{
+    display: none;
+    align-items: center;
+}
+.form a{
+    text-decoration: none;
+}
+.button{
+    margin-top: 35px;
+}
+.button input{
+    border: none;
+    color: white;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: rgb(110, 110, 243);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.button input:hover{
+    background-color: rgb(78, 78, 227);
+}
+.login-signup{
+    margin: 30px;
+    text-align: center;
+}
