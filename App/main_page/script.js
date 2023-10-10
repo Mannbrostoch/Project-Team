@@ -9,10 +9,3 @@ var currentScrollPos = window.pageYOffset;
     }
     prevScrollpos = currentScrollPos;
 }
-
-var swiper = new Swiper(".mySwiper", {
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-});
