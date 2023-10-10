@@ -127,3 +127,10 @@
   margin-bottom: 10px;
   font-weight: bold;
 }
+.title-footer a{
+  text-decoration: none;
+  color: #131212;
+}
+.title-footer a:hover{
+  color: #2F53B7;
+}
