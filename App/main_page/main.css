@@ -12,14 +12,31 @@ p{
 .listitem{ 
     width: 100%;
     height: 80px;
-    background-color: #FFFFFF;
+    background-color : #FFFFFF;
+    justify-content: space-between;
     align-items: center;
     padding: 0 50px;
-    box-shadow: #8f8b8b;
+    display: flex;
+    box-shadow: #747171;
     position: fixed;
     top: 0;
     left: 0;
     z-index: 10;  
+}
+.Listitem li a:is(:link,:active :visited ):hover{
+    color: #ffff;
+    background-color: #EF4992;
+    transition: 0.5s;
+    border-radius: 5px;
+}
+.Listitem .logo{
+    width: 200px;
+    height: 75px;
+    padding: 5px 10px 10px 10px;
+}
+.Listitem .logo img{
+    width: 100%;
+    height: 100%;
 }
 .Title{
     margin-top: 90px;
@@ -30,7 +47,7 @@ p{
     list-style: none;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: right;
     width: 100%;
     height: 100%;
 }
@@ -43,12 +60,27 @@ p{
 .Listitem ul li a{
     text-decoration: none;
     color: rgb(26, 25, 25);
+    padding: 10px 20px;
     font-size: 20px;
     font-weight: bold;
 }
-.Listitem ul li a:hover{
-    color: rgb(220, 137, 137);
-    transition: 0.5s;
+.Listitem label{
+    display: flex;
+    align-items: center;
+    width: 200px;
+    height: 30px;
+}
+.Listitem label i{
+    padding: 0 10px;
+    width: 30px;
+}
+.Listitem input{
+    width: 100%;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid rgb(59, 50, 50);
+    padding: 0 10px;
+    font-size: 18px;
 }
 h1{
     font-size: 40px;
@@ -63,9 +95,6 @@ h1{
 }
 .content_box{
     height: auto;
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
     display: grid;
     gap: 25px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -209,8 +238,6 @@ h1{
     height: 200px;
     background-color: #20232A;
     display: flex;
-    /* justify-content: center;
-    align-items: center; */
 }
 .row{
     display: flex;
