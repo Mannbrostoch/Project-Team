@@ -9,6 +9,10 @@ p{
     text-align: center;
     color: rgb(66, 172, 96);
 }
+.listitem label ::placeholder{
+    color: rgb(59, 50, 50);
+    font-size: 15px;
+}   
 .listitem{ 
     width: 100%;
     height: 80px;
@@ -230,6 +234,14 @@ h1{
     margin-right: 5px;
     width: 15px;
     height: 15px;
+}
+.price_product svg{
+    margin-left: 190px;
+    cursor:pointer;
+}
+.price_product svg :hover{
+    box-shadow: #898989;
+    transition: 0.5s;
 }
 /* footer */
 .container{
