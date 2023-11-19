@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+<meta charset="utf-8" />
+<link rel="icon" type="image/x-icon" href="/Image/logo/logo_page.png">
+<link rel="stylesheet" href="main.css">
+<title>Online Clothes Shop</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+<!-- bootstrap  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+  integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+<!-- Link Swiper's CSS -->
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+<!-- icon -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- Demo styles -->
+<style>
+  /* @import url("../Configuration/style_util.css"); */
+  @import url("../App/Configuration/style_util.css");
+
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 70%;
+    background: #000;
+  }
+
+  .swiper-slide {
+    font-size: 18px;
+    color: #fff;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    padding: 40px 60px;
+  }
+
+  .parallax-bg {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 130%;
+    height: 100%;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+  }
+
+  .swiper-slide .title {
+    font-size: 41px;
+    font-weight: 300;
+  }
+
+  .swiper-slide .subtitle {
+    font-size: 21px;
+  }
+
+  .swiper-slide .text {
+    font-size: 14px;
+    max-width: 400px;
+    line-height: 1.3;
+  }
+
+  .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 12px;
+    background-color: rgb(209, 219, 255);
+  }
+
+  .sw-img{
+    width: 200px;
+  }
+  .sw-img img{
+    width: 100%;
+  }
+
+  .btn-center {
+    display: flex;
+    justify-content: center;
+  }
+
+  #btn-go {
+    width: 160px;
+    position: absolute;
+    bottom: 7%;
+    z-index: 99;
+
+
+    background-color: var(--color--orange);
+    padding: 5px 15px;
+    text-decoration: none;
+    color: var(--color--aliceblue);
+    border-radius: 20px;
+    box-shadow: inset 2px 2px 4px var(--color--orange--inset), 2px 2px 2px var(--color--blueviolet);
+    float: right;
+    text-shadow: 2px 2px 7px var(--color--gray--low);
+    transition: 0.1s;
+    border: none;
+  }
+
+  #btn-go:active {
+    box-shadow: inset 2px 2px 4px rgb(70, 70, 70), 2px 2px 2px rgb(209, 219, 255);
+    ;
+    text-shadow: 2px 2px 4px rgb(109, 109, 109);
+  }
+
+  #btn-go a {
+    text-decoration: none;
+    color: var(--color--aliceblue);
+    font-size: 22px;
+    padding: 6px 31px;
+  }
+
+
+  /* card */
+
+  .contain-card {
+    width: 100%;
+    margin-top: 40px;
+  }
+
+  .card {
+    margin: auto;
+    background: none;
+    border: none;
+  }
+  .card:first-child{
+    margin-left: 12%;
+  }
+
+  .card .swipers {
+    width: 240px;
+    height: 320px;
+  }
+
+  .card .swiper-slide{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 18px;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    padding: 0;
+  }
+
+  .card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
+</head>
+
+<body>
+  <!-- Swiper -->
+  <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
+    <div class="parallax-bg" style="
+          background-image: url(../../Image/Home/Cover_home.JPEG);
+        " data-swiper-parallax="-23%"></div>
+    <div class="btn-center">
+      <button id="btn-go"><a href="../App/main_page/main_page.html">GO <i class="fa-brands fa-opencart"></i></a></button>
+    </div>
+    <div class="swiper-wrapper">
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Life Style </div>
+        <div class="subtitle" data-swiper-parallax="-200">clothes</div>
+        <div class="sw-img" data-swiper-parallax="-100">
+          <img src="../../Image/Home/rm-woman-03.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Fashion</div>
+        <div class="subtitle" data-swiper-parallax="-200">clothes</div>
+        <div class="sw-img" data-swiper-parallax="-100">
+          <img src="../../Image/Home/rm-woman-04.png" alt="">
+        </div>
+      </div>
+      <div class="swiper-slide">
+        <div class="title" data-swiper-parallax="-300">Sports</div>
+        <div class="subtitle" data-swiper-parallax="-200">clothes</div>
+        <div class="sw-img" data-swiper-parallax="-100">
+          <img src="../../Image/Home/rm-man-sport-01.png" alt="">
+        </div>
+      </div>
+    </div>
+    <!-- <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div> -->
+    <div class="swiper-pagination"></div>
+
+  </div>
+
+  <div class="row row-cols-sm-1 contain-card">
+    <div class="col-sm-3 card">
+      <div class="swipers sw-card">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../Image/Home/shose-01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/shose-02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/shose-03.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/shose-05.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 card">
+      <div class="swipers sw-card">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../Image/Home/man-02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/man-01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/woman-01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/man-03.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-3 card">
+      <div class="swipers sw-card">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide"><img src="../../Image/Home/clothes-set01.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/clothes-set02.jpg" alt=""></div>
+          <div class="swiper-slide"><img src="../../Image/Home/clothes-set04.jpg" alt=""></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    speed: 4000,
+    parallax: true,  //img behavior
+    //   loop: true, // loop slide
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    autoplay: {  // auto scroll
+      delay: 5000,
+      disableOnInteraction: false
+    },
+    scrollbar: { // touch scroll
+      el: ".swiper-scrollbar",
+      hide: true,
+    },
+  });
+
+  // card
+
+  var swipers = new Swiper(".sw-card", {
+    effect: "cards",
+    grabCursor: true,
+  });
+
+</script>
+
+</html>
