@@ -4,29 +4,45 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LoginForm</title>
-    <link rel="stylesheet" href="login.css">
+    <title>Login-Register Form</title>
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+    <link rel="stylesheet" href="login-register.css">
 </head>
 <body>
-    <div class="center">
-        <h1>Login</h1>
-        <form method="post">
-            <div class="text_filed">
-                <input type="text" required>
-                <span></span>
-                <label>Username</label>
+   <div class="container">
+         <div class="forms">
+            <div class="form signup">
+                <span class="title"><center>Login</center></span>
+                <form action="#">
+                    <div class="input-file">
+                        <input type="text" placeholder="Phone number  or email " required>
+                        <i class="uil uil-envelope icon"></i>
+                        <i class="uil uil-phone show"></i>
+                    </div>
+                    <div class="input-file">
+                        <input type="password" class="password" placeholder="Password" required>
+                        <i class="uil uil-lock icon"></i>
+                        <i class="uil uil-eye-slash showHidePw"></i>
+                    </div>
+                    <div class="box">
+                        <div class="box-content">
+                            <input type="chackbox" id="logchack">
+                            <label for="logchack" class="text">Remember</label>
+                        </div>
+                        <a href="#" class="text">Forgot password</a>
+                    </div>
+                    <div class="input-file button">
+                        <a href="../main_page/main_page.html"><input type="button" value="Login Now" ></a>
+                    </div>
+                </form>
+                <div class="login-signup">
+                    <span class="text">Create New?
+                        <a href="register.html" class="login-link"> Register now</a>
+                    </span>
+                </div>
             </div>
-            <div class="text_filed">
-                <input type="password" required>
-                <span></span>
-                <label>Password</label>
-            </div>
-            <div class="pass">Forgot Password?</div>
-            <input type="submit" value="Login">
-            <div class="signup_link">
-                Not a member? <a href="/App/login and register/register.html">Signup</a>
-            </div>
-        </form>
-    </div>
-</body>
+        </div>
+   </div>
+   <script src="script.js"></script>
+</body>   
 </html>
