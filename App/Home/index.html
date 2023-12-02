@@ -5,6 +5,11 @@
 <link rel="stylesheet" href="main.css">
 <title>Online Clothes Shop</title>
 <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+
+<!-- Materailize CSS -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 <!-- bootstrap  -->
 <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
   integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
@@ -16,6 +21,10 @@
 
 <!-- icon -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+<!-- AOS Animation -->
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
 <!-- Demo styles -->
 <style>
@@ -34,6 +43,11 @@
     color: #000;
     margin: 0;
     padding: 0;
+  }
+  .img100{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
   }
 
   .swiper {
@@ -138,6 +152,7 @@
     margin: auto;
     background: none;
     border: none;
+    box-shadow: none;
   }
   .card:first-child{
     margin-left: 12%;
@@ -164,6 +179,67 @@
     height: 100%;
     object-fit: cover;
   }
+
+  .bener{
+    width: 100%;
+    height: 500px;
+    /* background-color: red; */
+    margin-top: 100px;
+  }
+  .bener-pic{
+    width: 55%;
+    height: 100%;
+    /* background-color: yellow; */
+    margin-left: 40px;
+    border-radius: 24px;
+    position: relative;
+  }
+  .bener-pic img{
+    /* width: 100%;
+    height: 100%;
+    object-fit: cover; */
+    border-radius: 24px;
+  }
+  .bener-pic .txt{
+    width: 300px;
+    height: 150px;
+    background-color: rgba(233, 232, 232, 0.555);
+    position: absolute;
+    top: 50%;
+    right: 0%;
+    transform: translateX(150px);
+    border-radius: 22px;
+    padding: 20px;
+    box-shadow: 2px 2px 8px rgb(140, 185, 214);
+  }
+  .bener-pic h4,h5{
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px 4px rgb(176, 201, 236);
+    margin: 6px 0px;
+  }
+
+  .box-pic{
+    width: 90%;
+    /* height: 200px; */
+    overflow: hidden;
+    margin: auto;
+    margin-top: 80px;
+  }
+  .box-pic .pic{
+    height: 400px;
+    /* background-color: yellow; */
+    border: 2px solid black;
+    padding: 20px;
+  }
+  .pic-mini{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0, 60, 255);
+  }
+  
+
+
+
 </style>
 </head>
 
@@ -171,7 +247,7 @@
   <!-- Swiper -->
 
   <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper">
-    <div class="parallax-bg" style="
+    <div class="parallax-bg" id="head-page" style="
           background-image: url(../../Image/Home/Cover_home.JPEG);
         " data-swiper-parallax="-23%"></div>
     <div class="btn-center">
@@ -237,6 +313,74 @@
       </div>
     </div>
   </div>
+  <div class="bener">
+    <div class="bener-pic" data-aos="fade-up" data-aos-duration="1000">
+      <img src="../../Image/Home/Bener01.jpeg" class="img100" alt="">
+      <div class="txt">
+        <h5>Your Clothes are</h5>
+        <h4 style="white-space: pre;">    Your Life Style</h4>
+      </div>
+    </div>
+  </div>
+  <div class="bener bener02" style="display: flex; justify-content: right;">
+    <div class="bener-pic bener-ch02" data-aos="fade-up" data-aos-duration="1000">
+      <img src="../../Image/Home/Bener02.jpg" class="img100" alt="">
+      <div class="txt txt-ch02" style="position: absolute; left: 0; transform: translateX(-150px);">
+        <h5>All you need</h5>
+        <h4 style="white-space: pre;">    In here!</h4>
+        <h4 style="white-space: pre;">The Best Choice</h4>
+      </div>
+    </div>
+  </div>
+  <div class="row box-pic">
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic01.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic02.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic03.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic04.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic05.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic06.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic08.jpg" class="img100" alt="">
+      </div>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-4 col-xl-3 pic">
+      <div class="col-sm pic-mini">
+        <img src="../../Image/Home/boxpic09.jpg" class="img100" alt="">
+      </div>
+    </div>
+    
+    
+  </div>
+  <div class="click-up" data-aos="fade-up" style="display: flex; justify-content: right; padding: 40px;">
+    <a class="btn-floating btn-large pulse" href="#head-page"><i class="fa-solid fa-chevron-up"></i></a>
+  </div>
+
+</div>
 
 </body>
 <!-- Swiper JS -->
@@ -273,6 +417,9 @@
     grabCursor: true,
   });
 
+</script>
+<script>
+  AOS.init();
 </script>
 
 </html>
