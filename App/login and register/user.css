@@ -1,0 +1,87 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+.container{
+    position: relative;
+    max-width: 440px;
+    width: 100%;
+    background-color: white;
+    overflow: hidden;
+}
+.forms{
+    align-items: center;
+    height: 50rem;
+    width: 200%;
+    transition: height 0.2s ease;
+}
+.title{
+    position: relative;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-top: 1.5rem;
+    margin-left: 11rem;
+}
+.user{
+    width: 7rem;
+    height: 7rem;
+    margin-top: 0.5rem;
+    margin-left: 10.5rem;
+    background-color: white;
+    align-items: center;
+    border-radius: 10rem;
+}
+
+.input-data{
+    position: relative;
+    height: 4.5rem;
+    width: 100%;
+    margin-top: 30px;
+}
+b{
+    margin-left: 1.5rem;
+    height: 4rem;
+    width: 100%;
+    margin-top: 0px;
+}
+.input-data input{
+    position: absolute;
+    height: 3rem;
+    width: 25rem;
+    padding: 0 35px;
+    margin-left: 1.2rem;
+    margin-top: 1rem;
+    border: 1px solid;
+    font-size: 16px;
+    border-radius: 1.5rem ; 
+    transition: all 0.2s ease;
+    color: black;
+}
+.logout{
+    display: flex;
+    margin-top: 3rem;
+}
+p{
+    margin-left: 1rem;
+    font-size: 0.75rem;
+    padding-top: 0.25rem;
+}
+a{
+    width: 5rem;
+    text-align: center;
+    margin-left: 15rem;
+    color: black;
+    transition: 0.2s ease;
+    text-decoration: none;
+}
+a:hover{
+    color: cadetblue;
+}
