@@ -50,7 +50,7 @@ body {
     8px 8px 8px var(--color--gray--low);
 }
 .prod-img #item {
-  height: 400px;
+  height: 450px;
   /* border: 2px solid var(--color--orange); */
   display: flex;
   justify-content: center;

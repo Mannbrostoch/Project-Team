@@ -34,13 +34,14 @@ p{
     border-radius: 5px;
 }
 .Listitem .logo{
-    width: 200px;
+    width: 280px;
     height: 75px;
-    padding: 5px 10px 10px 10px;
+    /* padding: 5px 10px 10px 10px; */
 }
 .Listitem .logo img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
 }
 .Title{
     margin-top: 90px;
