@@ -165,7 +165,7 @@ h1{
 }
 .product_img img{
     width: 100%;
-    height: 400px;
+    height: auto;
     max-height: 50rem;
     transition: 0.8s;
     object-fit: cover;
