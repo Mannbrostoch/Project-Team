@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="icon" type="image/x-icon" href="/Image/logo/Logo__hearder.png">
+    <link rel="icon" type="image/x-icon" href="/Image/logo/Logo__hearder.png" />
     <link rel="stylesheet" href="product_style.css" />
     <link
       rel="stylesheet"
@@ -54,7 +54,7 @@
         <div class="prod-img">
           <div class="row row-cols-xl-3 pro-info">
             <div class="col-sm" id="item">
-              <img src="../../Image/Product selling/G37.jpg" alt="">
+              <img src="../../Image/Product selling/G37.jpg" alt="" />
             </div>
 
             <div class="col" id="desc">
@@ -154,7 +154,7 @@
             var imgUrl = urlParams.get('img_url');
             console.log(imgUrl);
 
-            $('#item img').attr('src',imgUrl);
+            $('#item img').attr('src','../../Image/'+imgUrl);
         }
 
         fetchAPI()
