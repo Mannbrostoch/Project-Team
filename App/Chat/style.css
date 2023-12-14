@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.Main-chat{
+    width: 400px;
+    height: 400px;
+    /* padding: 20px; */
+    background-color: white;
+    /* display: flex;justify-content: center; */
+    /* display: flex; */
+    /* padding: 5px 5px; */
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    display: none;
+    /* border-radius: 50px; */
+}
+.top{
+    width: 400px;
+    height: 270px;
+    background-color: white;
+    /* border-radius: 20px; */
+    
+}
+.button{
+    width: 400px;
+    height: 130px;
+    background-color: white;
+    /* border-radius: 20px;  */
+    /* display: flex; */
+}
+.pic{
+    width: 400px;
+    height: 85px;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+.pic i{
+    width: 20px;
+    height: 20px;
+    display: flex;justify-content: flex-end;
+}
+.top-txt{
+    font-family: 'Times New Roman', Times, serif;
+    border: 10px;
+    margin: 20px 40px;
+}
+.top-p-txt{
+    border: 5px;
+    margin: 40px 40px;
+}
+.top-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.top-icon i {
+    cursor: pointer;
+    margin: 0 2px;
+    color: #000000;
+    font-weight: 900;
+    background-color: rgb(227, 226, 226);
+    text-align: center;
+    padding: 15px;
+    border-radius: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#pic-chat{
+    width: 35px;
+    /* border-radius: 100%; */
+    margin: 5px 5px;
+    
+    /* display: flex;align-items: end; */
+}
+button{
+    width: 320px;
+    height: 50px;
+    background-color: blue;
+    margin: 10px 30px;
+    border-radius: 20px;
+    color: white;
+}
+.button-txt{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    margin: 10px;
+    display: flex;justify-content: center;
+}
+/* #demo{
+     font-family: 'Times New Roman', Times, serif;
+     display: flex;justify-content: flex-end;
+     margin: 50px;
+} */
+.message {
+    text-align: center;
+}
+.message i {
+    margin: 0 2px;
+}
+.icon-chat{
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: rgb(51, 0, 255);
+    border-radius: 100%;
+}
+.icon-chat i {
+    font-size: 35px;
+    color: #fff;
+}
